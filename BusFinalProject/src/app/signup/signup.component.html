@@ -1,0 +1,141 @@
+
+    <!--
+    <form [formGroup]="userlistForm" (ngSubmit)="saveUserList()">
+      <div class="nameshift">
+      <div class="form-group container  Design">
+          <div *ngIf="userlistForm.controls['userId'].errors &&
+            (userlistForm.controls['userId'].touched || userlistForm.controls['userId'].dirty)">
+              user Id is required
+          </div>
+          <label for="userId">User Id</label>
+          <input class="form-control" [readonly]="isUpdate" type="text" name="userId" id="userId" formControlName="userId">
+      </div>
+      <div class="form-group container  Design">
+          <div *ngIf="userlistForm.controls['userName'].errors &&
+                    (userlistForm.controls['userName'].touched || userlistForm.controls['userName'].dirty)">
+              userName is required
+          </div >
+          <label for="userName">UserName</label>
+          <input class="form-control" type="text" name="userName" id="userName" formControlName="userName">
+      </div>
+  
+      <div class="form-group container Design">
+          <div *ngIf="userlistForm.controls['password'].errors &&
+                    (userlistForm.controls['password'].touched || userlistForm.controls['password'].dirty)">
+              Password is required
+          </div>
+          <label for="password">Password</label>
+          <input class="form-control" type="text" name="password" id="password" formControlName="password">
+      </div>
+  
+      <div class="form-group container Design ">
+          <div *ngIf="userlistForm.controls['firstName'].errors &&
+                    (userlistForm.controls['firstName'].touched || userlistForm.controls['firstName'].dirty)">
+             First Name is required
+          </div>
+          <label for="firstName">First Name</label>
+          <input class="form-control" type="text" name="firstName" id="firstName" formControlName="firstName">
+      </div>
+  
+  
+      <div class="form-group container Design">
+          <div *ngIf="userlistForm.controls['lastName'].errors &&
+                    (userlistForm.controls['lastName'].touched || userlistForm.controls['lastName'].dirty)">
+              Last Name is required
+          </div>
+          <label for="lastName">Last Name</label>
+          <input class="form-control" type="text" name="lastName" id="lastName" formControlName="lastName">
+      </div>
+  
+  
+      <div class="form-group container Design">
+          <div *ngIf="userlistForm.controls['contact'].errors &&
+                    (userlistForm.controls['contact'].touched || userlistForm.controls['contact'].dirty)">
+              Contact is required
+          </div>
+          <label for="contact">Contact</label>
+          <input class="form-control" type="text" name="contact" id="contact" formControlName="contact">
+      </div>
+      <div class="form-group container Design">
+          <div *ngIf="userlistForm.controls['email'].errors &&
+                    (userlistForm.controls['email'].touched || userlistForm.controls['email'].dirty)">
+              email is required
+          </div>
+          <label for="email">Email</label>
+          <input class="form-control" type="text" name="email" id="email" formControlName="email">
+      </div>
+      <input type="submit" value="Register user" class="btn btn-primary" [disabled]="userlistForm.invalid" routerLink="/userpage" style="background-color:black ; color:aliceblue">
+    </div>
+    </form>
+    </body>  -->
+
+
+
+
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <h2 style="text-align: center;">Login with Social Media or Manually</h2> 
+        <br><br>
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="vl">
+              <span class="vl-innertext">or</span>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+              </a>
+              <a href="#" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+              </a>
+              <a href="#" class="google btn">
+                <i class="fa fa-google fa-fw"></i> Login with Google
+              </a>
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p>Or sign in manually:</p>
+              </div>
+              
+            <div class="input-container">
+             <i class="fa fa-envelope icon"></i>
+             <input class="input-field" type="text" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" name="password" placeholder="Password" required>
+              </div>
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" name="password" placeholder="Repeat Password" required>
+              </div>
+              <input type="submit" value="Sign up">
+            </div> 
+      
+          </div>
+        </form>
+        <br><br>
+      </div>
+      <div class="container">
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="#" style="color:white" class="btn" routerLink="/login"><i class="fa fa-user"></i>&nbsp;Login</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white" class="btn">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </body>
+      </html>
